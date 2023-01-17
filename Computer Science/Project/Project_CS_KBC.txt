@@ -1,0 +1,88 @@
+#include<iostream.h>
+#include<stdio.h>
+#include<conic.h>
+Void main( )
+{
+ Int x [ 3 ] { 0 ,0 ,0 } , i ; 
+ Char ch1 [ 3 ] [ 50 ] , ch2 ;
+for( i = 0 ; i < 3 ; i++)
+{
+   cout<<"Your Name Please :";
+   gets( ch1[ i ] ) ; 
+   cout<<"\n You Are Participant"<<i+1<<"Here Is A Quiz For You, On Computer Science Subject. You Need To Answer 5 Questions Each Correct Answer Will Reward You A Score Of 10. You Can Answer Only In The Form Of 'a' , 'b' And 'c' ";
+   cout<<"So Miss/Mr."<<ch1[ i ]<<"Here We Start Our Quiz";
+   clrsr( ) ;
+   cout<<"\n Q.1 Who Is The Developer Of C++ language ?";
+   cout<<"\n a) Bjarne Stroustrup                      b) Donald Kunth                      c) Dennis Ritchie \n Answer : ";
+   cin>>ch2 ;
+      if ( ch2=='a') 
+   {
+          x [ i ]+ = 10;
+          cout<<"WELL DONE.    Your Score Is "<<x[ i ] ;
+   }
+      else
+          cout<<"Wrong Answer" ;
+ getch( );
+ clrscr( );
+   cout<<"\n Q.2 What Is The Full Form Of ALU ?";
+   cout<<"\n a) Analog Logical Unit                      b) Arithmatic Logic Unit                      c) Analog Logic Union \n Answer : ";
+   cin>>ch2;
+       if( ch2 == 'b')
+    {
+        x[ i ]+ = 10;
+        cout<<"WELL DONE.    Your Score Goes To  " <<x[ i ];
+    }
+       else
+         cout<<"Wrong Answer";
+ getch( );
+ clrscr( );
+   cout<<"\n Q.3 Which One Of The Function Belong To The Basic Header File <iostream.h> ?";
+   cout<<"\n a) gets                      b) puts                      c) put\n Answer :";
+   cin>>ch2;
+       if(ch =='c')
+          {
+               x[ i ]+ = 10;
+               cout<<"WELL DONE. Your Score Goes To "<<x[ i ];
+          }
+       else
+       cout<<"Wrong Answer";
+ getch( );
+ clrscr( );
+  cout<<"\n Q.4 Which Of The Following Is Not A Relational Operator ?";
+  cout<<"\n a) !=     b) >     c) ||  \n Answer :";
+  cin>> ch2;
+      if(ch2 =='c')
+        {
+          x[ i ]+ = 10;
+          cout<<"WELL DONE. Your Score Goes To "<<x[ i ];
+        }
+       else
+          cout<<"Wrong Answer";
+ getch( );
+ clrscr( );
+ cout<<"\n Q.5 Which One Of The Super Computer Is Made By India";
+ cout<<"\n a) ICL39     b)PARAM 8000     c)7500 MAGNUM \n Answer :";
+ cin>>ch2;
+      if(ch2 =='b')
+         {
+           x[ i ]+ = 10;
+           cout<<"Well Done. So Finally Your Score Is <<x[ i ];
+         }
+      else
+           cout<<"Wrong Answer";
+ getch( );
+clrscr( );
+     if (x[ i ] ==50)
+           cout<<"You Have A Excellent Knowledge"<<" Your Score Is "<<x[ i ];
+if (x[ i ] ==40||x[ i ]==30)
+           cout<<"You Have A Great Mind"<<" Your Score Is "<<x[ i ];
+if (x[ i ] ==20||x[ i ]==10)
+           cout<<"Do Study Well"<<" Your Score Is "<<x[ i ];
+}                              //for loop
+      if(x[ 0 ] > x[ 1 ] && x[ 0 ] > x[ 2 ])
+      cout<<"The Winner Is "<<ch1[ 0 ][ 50 ];
+      else if(x[ 1 ] > x[ 0 ] && x[ 1 ] > x[ 2 ])
+      cout<<"The Winner Is "<<ch1[ 1 ][ 50 ];      
+      else if(x[ 2 ] > x[ 0 ] && x[ 2 ] > x[ 2 ])
+      cout<<"The Winner Is "<<ch1[ 2 ][ 50 ];
+}                             //void main
